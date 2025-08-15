@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Forms</title>
+  <style>
+    
+   .fieldset-one{
+    background-color: antiquewhite;
+    margin-bottom: 10px;
+   }
+   .fieldset-two{
+    background-color: antiquewhite;
+    margin-bottom: 10px;
+   }
+   .fieldset-three{
+    background-color: antiquewhite;
+    margin-bottom: 10px;
+   }
+   .fieldset-four{
+    background-color:antiquewhite;
+     margin-bottom: 10px;
+   }
+   .fieldset-five{
+    background-color:antiquewhite;
+   }
+   .flex-container{
+    display: flex;
+    justify-content: space-between;
+   }
+   .input-one{
+    border-top:0;
+    border-left: 0;
+    border-right: 0;
+    background-color: antiquewhite;
+   }
+   .input-two{
+    border-top:0;
+    border-left: 0;
+    border-right: 0;
+    background-color: antiquewhite;
+   }
+   .submit{
+    background-color: aqua;
+    cursor: pointer;
+   }
+    .footer{
+      background-color: black;
+      color: white;
+      margin-top: 20px;
+    }
+    .container {
+      background-image: url('football-lineup/images.png');
+      
+      background-repeat: no-repeat;
+      margin-left:auto ;
+      margin-right: auto;
+      background-size: contain;
+      height: 600px;
+      width: 400px;
+      border-color:rgb(219, 52, 52) ;
+      border-width: 2px;
+      border-style: solid;
+    }
+    .container-item-one{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 70px;
+      
+      
+    }
+    .shirt-nub{
+      border: solid 2px black;
+      margin-right: 5px;
+      background-color: white;
+    }
+    .player-name{
+       border: solid 2px black;
+       margin-left: 5px;
+       background-color: white;
+    }
+    .container-details,
+    .fullbacks-container {
+      display: flex;
+      
+    }
+    .shirt-number{
+      border: solid 2px black;
+     margin-left: 40px;
+     margin-right: 10px;
+      background-color: white;
+
+    }
+    .player-nam{
+       border: solid 2px black;
+      margin-right: 40px;
+       background-color: white;
+    }
+    .full-backs{
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    .full-backs-one{
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 50px;
+    }
+    .container-item-zero{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .container-item-two{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+    .container-item-three{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 25px;
+    }
+    .container-item-four{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 60px;
+    }
+    .container-item-five{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+    .jersey-one{
+      width: 20px;
+      
+    }
+    .text-container{
+
+    }
+    .complex-animation {
+  animation-name: color-change;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes color-change {
+  0% {
+    background-color: red;
+  }
+  50% {
+    background-color: blue;
+  }
+  100% {
+    background-color: green;
+  }
+}
+h1 {
+  height: 70px;
+  text-align: center;
+  padding-top: 20px;
+  
+}
+form {
+  
+}
+  </style>
+</head>
+<body>
+ <h1 class="complex-animation">Student Details Form & Football Lineup</h1>
+ <p>Just for me (the teacher).Not for the student. For all the things they tell me that i don't want to forget.</p>
+  <form>
+ <fieldset class="fieldset-one">
+  &#128065; obinnamicheal25@icloud.com
+ </fieldset>
+ <fieldset class="fieldset-two">
+  <div class="flex-container">
+    <div>
+    Student Name
+  </div>
+  <div>
+    <abbr title="Please Your Full Name">PYFN</abbr>
+  </div>
+  </div>
+  
+ <p>your name</p>
+  <input type="text" class="input-one" id="your-name" name="your-name" required>
+</fieldset>
+
+<fieldset class="fieldset-three">
+  <label>Class period</label><br>
+  <label>1</label>
+  <input type="radio"><br>
+  <label>2</label>
+  <input type="radio"><br>
+  <label>3</label>
+  <input type="radio"><br>
+  <label>4</label>
+  <input type="radio"><br>
+  <label>5</label>
+  <input type="radio"><br>
+  <label>6</label>
+  <input type="radio"><br>
+  <label>7</label>
+  <input type="radio"><br>
+<label>8</label>
+  <input type="radio"><br>
+</fieldset>
+
+<fieldset class="fieldset-four">
+  
+  
+  <div class="flex-container">
+    <div>
+    Details
+    </div>
+    <div>
+      <abbr title="Please Make Your Answer concise">PMYAC</abbr>
+    </div>
+
+  </div>
+   <p>Your answer</p>
+   <input type="text" class="input-two" id="your-ansswer" name="your-answer" required>
+  
+</fieldset>
+
+<fieldset class="fieldset-five">
+<label for="comments">Addition comments about yourself:</label>
+<textarea id="comments" name="comments" rows="5" cols="30"></textarea>
+<br>
+<button type="submit" class="submit">Submit</button>
+<hr>
+</fieldset>
+
+  </form>
+
+<h2>Football Pitch Lineup</h2>
+<p>practicing flex layout with football pitch</p>
+
+      <div class="container">
+        <div class="container-item-one">
+          <div class="shirt-nub">1</div>
+          <div class="text-container">
+                   <div class="player-name">name</div>
+          
+          </div>
+          
+        </div>
+
+        <div class="container-item-zero">
+          <div class="container-details">
+              <div class="shirt-number">6</div>
+              <div class="player-nam">name</div>
+          </div>
+              <div class="container-details">
+                 <div class="shirt-number">5</div>
+                 <div class="player-nam">name</div>
+              </div>
+        </div>
+            
+        <div class="full-backs">
+          <div class="fullbacks-container">
+                <div class="shirt-nub">2</div>
+                <div class="player-name"> name </div>
+          </div>
+            <div  class="fullbacks-container">
+                 <div class="shirt-nub">3</div>
+                <div  class="player-name">name </div>
+            </div>
+               
+        </div>
+
+        <div>
+                <div class="container-item-two">
+                  <div class="shirt-nub">4</div>
+                  <div class="player-name">name </div>
+                </div>
+
+        </div>
+              
+        <div class="container-item-three">
+            <div  class="container-details">
+              <div class="shirt-number">10</div>
+              <div class="player-nam">name</div>
+            </div>
+            <div class="container-details">
+              <div class="shirt-number">8</div>
+              <div class="player-nam">name</div>
+            </div>
+        </div>
+              
+                 
+            <div class="full-backs">
+          <div class="fullbacks-container">
+                <div class="shirt-nub">11</div>
+                <div class="player-name"> name </div>
+          </div>
+            <div  class="fullbacks-container">
+                 <div class="shirt-nub">7</div>
+                <div  class="player-name">name </div>
+            </div>
+               
+        </div>      
+            
+
+           <div>
+                <div class="container-item-two">
+                  <div class="shirt-nub">9</div>
+                  <div class="player-name">name </div>
+                </div>
+
+           </div>
+
+           <div class="container-item-four">
+            <div  class="container-details">
+              <div class="shirt-number">10</div>
+              <div class="player-nam">name</div>
+            </div>
+            <div class="container-details">
+              <div class="shirt-number">8</div>
+              <div class="player-nam">name</div>
+            </div>
+        </div>
+
+        
+
+            
+        <div class="full-backs-one">
+          <div class="fullbacks-container">
+                <div class="shirt-nub">2</div>
+                <div class="player-name"> name </div>
+          </div>
+
+           <div class="container-details">
+              <div class="shirt-number">6</div>
+              <div class="player-nam">name</div>
+          </div>
+              <div class="container-details">
+                 <div class="shirt-number">5</div>
+                 <div class="player-nam">name</div>
+              </div>
+
+            <div  class="fullbacks-container">
+                 <div class="shirt-nub">3</div>
+                <div  class="player-name">name </div>
+            </div>
+               
+        </div>
+
+
+        <div class="full-backs">
+          <div class="fullbacks-container">
+                <div class="shirt-nub">2</div>
+                <div class="player-name"> name </div>
+          </div>
+            <div  class="fullbacks-container">
+                 <div class="shirt-nub">3</div>
+                <div  class="player-name">name </div>
+            </div>
+               
+        </div>
+
+        <div class="container-item-five">
+          <div class="container-details">
+              <div class="shirt-number">6</div>
+              <div class="player-nam">name</div>
+          </div>
+              <div class="container-details">
+                 <div class="shirt-number">5</div>
+                 <div class="player-nam">name</div>
+              </div>
+        </div>
+
+        <div>
+        <div class="container-item-one">
+          <div class="shirt-nub">1</div>
+          <div class="player-name">name</div>
+        </div>
+              
+              
+      </div>
+    </div>
+        
+
+    <footer class="footer">
+
+  <div class="flex-container">
+     <div>
+         <h3>Autors name and detials </h3>
+  <address >
+    Plot:2015 festac link bridge
+    <p>Amuwo odofin LGA</p>
+    <p>Logas state.</p>
+
+  </address>
+     </div>
+
+     <div>
+         
+  <div>
+    <h3>Autors socials,telephone and email</h3>
+   
+    <p>
+       <label for="telephone">Telephone:</label>
+      <a href="tel:+2348022667171">+2348022667171</a>
+    </p>
+    <p>
+       <label for="email">Email:</label>
+      <a href="mailto:Obinnamicheal25@icloud.com">Obinnamicheal25@icloud.com</a>
+    </p>
+     <p>
+       <label for="social-media">Social Media:</label>
+      <a href="https://web.facebook.com/john.michael.71474/">Chukwu Micheal@Facebook</a>
+    </p>
+    <p>
+       <label for="web-page">web-page:</label>
+      <a href="https://micheal-airlyon.github.io/completelearning-website/">Chukwu Micheal@Facebook</a>
+    </p>
+    <label for="web-page">website:</label>
+      <a href="https://micheal-airlyon.github.io/michealfirst-website/">youtube-practice</a>
+    </p>
+    
+  </div>
+  
+     </div>
+    </div>
+  </footer>
+  <label for="web-page">
+                    website:
+                    </label>
+                    <a href="Amazon.html/Amazon-image.html/Amazon Project.html">please checkout our webpage on amazon project</a>
+  
+  </p>
+  <p><a href="#top">back to the top!</a></p>
+    
+
+  </body>
+
+</html>
